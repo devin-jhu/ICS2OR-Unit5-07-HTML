@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <meta name="description" content="day of the week">
+    <meta name="keywords" content="multiplication,numbers">
+    <meta name="author" content="devin-jhu">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>multiplication</title>
+  </head>
+  <body>
+    <p>multiplication</p>
+    <p>Input the two numbers you want to multiply</p>
+    if there is a negative number put it here <input type="number" id="input1"><br>
+    <input type="number" id="input2"><br>
+    <button onclick="multiply()">multiply</button><br>
+    <script>
+      let input1;
+      let input2;
+      let total=0;
+      var counter=0;
+      function multiply() {
+        input1=document.getElementById("input1").value;
+        input1= +input1;
+        input2=document.getElementById("input2").value;
+        input2= +input2
+        while (input2-counter>0){
+        total=total+input1;
+        counter=counter+1;
+        }
+      alert("the answer is "+total);
+        }
+    </script>
+  </body>
+</html>
